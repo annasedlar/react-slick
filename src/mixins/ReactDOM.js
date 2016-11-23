@@ -1,6 +1,3 @@
-import React from 'react';
-import ReactDOM14 from 'react-dom';
+var React = require('react');
 
-var ReactDOM = (React.version >= '0.14.0') ? ReactDOM14: React;
-
-export default ReactDOM;
+module.exports = require('react-dom-polyfill')(React);
